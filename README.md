@@ -36,5 +36,5 @@ Each Portal has a Web ring which we will combine using the Dat Portal.
 
 I will add the URL of your own Portal to the web ring of the Dat Portal. Every link you add in your portal will be visible for everyone in the Dat Portal. Also if you add members to your web ring, all the links will be available in the Dat Portal.
 
-IMAGE
+<img width="295" alt="bildschirmfoto 2018-06-29 um 10 00 42" src="https://user-images.githubusercontent.com/37656714/42134987-1e7e8a36-7d45-11e8-90c5-d1fdf424fba5.png">
 
