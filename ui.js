@@ -17,6 +17,7 @@ export function addLinkToPage(link, index) {
 	$(el, '.date').textContent = daysAgo(link.date)
 	$(el, '.domain').textContent = link.href
 	$('#links-list').appendChild(el)
+}
 
 export function addWebRingMemberToPage(webRingMember) {
 	var el = clone($('#web-ring-member-template'))

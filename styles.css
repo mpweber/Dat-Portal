@@ -187,3 +187,11 @@ select {
 	font-size: 0.8em;
 	outline: none;
 }
+
+.alert {
+	text-align: center;
+	padding-top: 3em;
+	font-weight: bold;
+	color: white;
+	font-size: 1.4em;
+}
