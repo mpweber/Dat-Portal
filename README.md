@@ -11,6 +11,8 @@ The portal is a copy of the livestream project from Paul Frazee. I just changed 
 
 Everyone can create their own portal and add it to the Dat Portal. So all users can constantly discover new pages.
 
+![datportal](https://user-images.githubusercontent.com/37656714/42135061-581ce246-7d46-11e8-96b8-3420787d55ad.gif)
+
 
 ## Create your own Portal
 
