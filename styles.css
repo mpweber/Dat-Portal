@@ -1,6 +1,9 @@
+@import 'https://fonts.googleapis.com/css?family=Sintony';
+
 body {
 	background-color: #2878e1;
 	color: white;
+	font-family: 'Sintony', sans-serif;
 }
 
 #links-list {
@@ -46,8 +49,11 @@ body {
 }
 
 #page-title {
-	border-top: 5px white solid;
 	color: white;
+}
+
+.subtitle {
+	font-size: 0.5em;
 }
 
 .links-list-item {
@@ -65,20 +71,10 @@ body {
 	transform: scale(1.1);
 }
 
-#heading {
-	border-top: 5px white solid;
-	display: inline-block;
-	color: white;
-}
-
 a {
 	color: black;
 	font-weight: bold;
 	text-decoration: none;
-}
-
-hr {
-	margin-left: -12px;
 }
 
 input[type="text"] {
@@ -121,14 +117,14 @@ select {
 
 .thumbnail-container {
 	width: 300px;
-	height: 100px;
-	margin-left: -12px;
+	height: 120px;
 	border: none;
 	pointer-events: none;
 	display: inline-block;
 	overflow: hidden;
 	position: relative;
 	background: #f9f9f9;
+	margin-top: -20px;
 }
 
 .thumbnail-container::before {
@@ -161,7 +157,6 @@ select {
 
 .thumbnail iframe {
 	opacity: 0;
-	transition: all 300ms ease-in-out;
 }
 
 
@@ -188,10 +183,6 @@ select {
 	outline: none;
 }
 
-.alert {
-	text-align: center;
-	padding-top: 3em;
-	font-weight: bold;
-	color: white;
-	font-size: 1.4em;
+#lm {
+	display: none;
 }

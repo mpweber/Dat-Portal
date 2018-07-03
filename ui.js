@@ -6,9 +6,11 @@ import {
 	clone
 } from './util.js'
 
+
 export function addLinkToPage(link, index) {
+
 	var el = clone($('#links-list-item-template'))
-	//$(el, '.index').textContent = `${index + 1}.`
+	$(el, '.index').textContent = `${index + 1}.`
 	$(el, '.origin').textContent = link.webRingName
 	$(el, '.link').textContent = link.title
 	$(el, '.link').setAttribute('href', link.href)
@@ -17,14 +19,15 @@ export function addLinkToPage(link, index) {
 	$(el, '.date').textContent = daysAgo(link.date)
 	$(el, '.domain').textContent = link.href
 	$('#links-list').appendChild(el)
+		
 }
 
-export function addWebRingMemberToPage(webRingMember) {
+ export function addWebRingMemberToPage(webRingMember) {
 	var el = clone($('#web-ring-member-template'))
 	$(el, '.link').textContent = webRingMember.name + " / "
 	$(el, '.link').setAttribute('href', webRingMember.url)
-	$('#web-ring').appendChild(el)
-}
+	//$('#web-ring').appendChild(el)
+} 
 
 export function setGlobalError(err) {
 	var el = clone($('#global-error-template'))

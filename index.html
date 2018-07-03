@@ -8,27 +8,29 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script async src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+	<script async type="text/javascript" src="loadMore.js"></script>
+	<script async type="module" src="script.js"></script>
 </head>
 
 <body>
 
-	<div class="main" id="main">
+	<div class="main" id="test">
 		<h1>
-      <span id="page-title">Portal</span>
-	  <br />
-	 <button id="forkPage">Create own portal</button>
-	 <button id="aboutbtn">About it & how to add your portal to the web ring</button>
-	 <select id="hops-config">
-        <option value="0">No hops</option>
-        <option value="1">1 hop</option>
-        <option value="2">2 hops</option>
-        <option value="3">3 hops</option>
-	</select>
-	  <br />
-	<!--  <input type="text" placeholder="title" id="text-input">
-	  <input type="text" placeholder="href" id="href-input">
-	  <button>Add new item</button>  -->
-    </h1>
+			<span id="page-title"></span>
+			<span class="subtitle">A way to discover content on dat://</span>
+			<br />
+			<button id="forkPage">Create own portal</button>
+			<button id="aboutbtn">About it & how to add your portal to the web ring</button>
+			<select id="hops-config">
+				<option value="0">No hops</option>
+				<option value="1">1 hop</option>
+				<option value="2">2 hops</option>
+				<option value="3">3 hops</option>
+			</select>
+			<br />
+		</h1>
 
 		<div id="web-ring"></div>
 
@@ -37,41 +39,43 @@
 
 		<!--<h2 id="heading">Web ring</h2>-->
 
-	<template id="global-error-template">
-      <div class="error"></div>
-    </template>
+		<template id="global-error-template">
+			<div class="error"></div>
+		</template>
 
-	  <template id="links-list-item-template">
-	      <div class="links-list-item" id="1">
-	        <div class="index"></div>
-	        <div class="content">
-			 <div>
-			  <div class="thumbnail-container">
-			  <div class="thumbnail">
-			  <iframe src="https://beakerbrowser.com" scrolling="no" security="restricted" id="bg-image" frameborder="0" onload="this.style.opacity = 1"></iframe>
-			  </div>
-		      </div>
-			  <hr />
-			  <a class="link title" target="_blank"></a></div>
-	          <div><span class="origin"></span> <span class="date"></span> <span class="domain"></span></div>
-	        </div>
-	      </div>
-	    </template>
+		<template id="links-list-item-template">
+			<div class="links-list-item" id="lm">
+				<div class="index"></div>
+				<div class="content">
+					<div>
+						<div class="thumbnail-container">
+							<div class="thumbnail">
+								<iframe src="https://beakerbrowser.com" scrolling="no" security="restricted" id="bg-image" frameborder="0" onload="this.style.opacity = 1"></iframe>
+							</div>
+						</div>
+						<hr />
+						<a class="link title" target="_blank"></a>
+					</div>
+					<div>
+						<span class="origin"></span>
+						<span class="date"></span>
+						<span class="domain"></span>
+					</div>
+				</div>
+			</div>
+		</template>
 
+		<button id="loadMore">Load more</button>
 
-	<template id="web-ring-member-template">
-      <div class="web-ring-member">
-        <a class="link"></a>
-	</div>
-    </template>
+		<template id="web-ring-member-template">
+			<div class="web-ring-member">
+				<a class="link"></a>
+			</div>
+		</template>
 
 
 	</div>
 
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
-<script type="module" src="script.js"></script>
-
 
 </html>

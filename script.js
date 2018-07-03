@@ -8,7 +8,6 @@ import {
 } from './ui.js'
 import * as config from './config.js'
 
-
 async function readPortalLinks(archive) {
 	try {
 		var json = await archive.readFile('/portal.json', 'utf8')
@@ -93,16 +92,10 @@ async function onPageLoad() {
 	// render
 	webRing.forEach(addWebRingMemberToPage)
 	links.forEach(addLinkToPage)
+
+	document.getElementById("loadMore").click();
+	document.getElementById("loadMore").click();
+	
 }
 onPageLoad()
-
-window.onload = checkBrowser();
-function checkBrowser() {
-	var str = "" + window.location.href;
-	if (str.includes("https")) {
-		document.getElementById("main").style.visibility = 'hidden';
-		window.location.href = "dat://datportal.hashbase.io";
-		document.body.innerHTML = '<p class="alert">Please use the Beaker Browser to get full access to the page!</p>';
-	}
-}
 
