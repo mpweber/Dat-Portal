@@ -8,8 +8,8 @@ The portal is a copy of the livestream project from Paul Frazee. I just changed 
  - new design (thumbnail of linked site, ...)
  - fork button to easily create your own portal
  - forwarding to dat:// if https:// is used
+ - load more content button
  - some minor things
- - more coming soon... ( still in development )
 
 Everyone can create their own portal and add it to the Dat Portal. So all users can constantly discover new pages.
 
